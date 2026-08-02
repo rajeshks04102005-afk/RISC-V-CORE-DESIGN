@@ -31,7 +31,7 @@ module imm_gen (
       end
 
       // U-Type (LUI, AUIPC)
-      7'b0110311, 7'b0010111: begin
+      7'b0110111, 7'b0010111: begin
         imm_ext = {instr[31:12], 12'b0};
       end
 
